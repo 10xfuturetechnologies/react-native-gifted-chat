@@ -47,6 +47,7 @@ export default class Composer extends React.Component {
         ]}
         autoFocus={this.props.textInputAutoFocus}
         // value={this.props.text}
+        value={Platform.OS === 'ios' ? this.props.text : null}
         enablesReturnKeyAutomatically
         underlineColorAndroid="transparent"
         keyboardAppearance={this.props.keyboardAppearance}
