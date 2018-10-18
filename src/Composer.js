@@ -46,7 +46,7 @@ export default class Composer extends React.Component {
           { height: this.props.composerHeight }
         ]}
         autoFocus={this.props.textInputAutoFocus}
-        value={this.props.text}
+        // value={this.props.text}
         enablesReturnKeyAutomatically
         underlineColorAndroid="transparent"
         keyboardAppearance={this.props.keyboardAppearance}
@@ -60,9 +60,7 @@ const styles = StyleSheet.create({
   textInput: {
     flex: 1,
     marginLeft: 10,
-    fontSize: 5,
-    color: 'red',
-    backgroundColor: 'blue',
+    fontSize: 16,
     lineHeight: 16,
     marginTop: Platform.select({
       ios: 6,
